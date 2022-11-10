@@ -1,6 +1,7 @@
 
 
-Proof of Concept using MariaDB Dynamic table in Django.
+Proof of Concept using MariaDB Dynamic Column in Django.
+(https://mariadb.com/kb/en/dynamic-columns-from-mariadb-10/)
 
 Results:
 Performance of Filtering & searching in a large dynamic table is decent.
