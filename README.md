@@ -1,6 +1,6 @@
 
 
-Proof of Concept using MariaDB Dynamic table.
+Proof of Concept using MariaDB Dynamic table in Django.
 
 Results:
 Performance of Filtering & searching in a large dynamic table is decent.
@@ -15,8 +15,9 @@ Features
 - New attributes can be added (in json format)
 
 
-Install:
+Usage:
 - make sure MySQL or MariaDB is correctly set up as DatabaseEngine
+- pip install PyMySQL
 - add the app this app in INSTALLED_APPS
 - run migrations to create the Products table
 
