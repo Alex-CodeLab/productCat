@@ -13,7 +13,7 @@ Features
 - any amount of attributes can be added to a Product
 - Filters in Django-admin are automatically created based on unique keys/values in the dynamic table.
 - The admin-filters show up in the right column
-- New attributes can be added (in json format)
+- New attributes can be added using the json-widget (see screenshots below)
 
 
 Usage:
