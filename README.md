@@ -19,7 +19,8 @@ Features
 Usage:
 - make sure MySQL or MariaDB is correctly set up as DatabaseEngine
 - pip install django-mysql
-- add 'django_mysql' to INSTALLED_APPS
+- pip install django-flat-json-widget
+- add 'django_mysql' and 'flat_json_widget' to INSTALLED_APPS
 - add 'products' (this app) to INSTALLED_APPS
 - run migrations to create the Products table
 
@@ -38,9 +39,9 @@ Initial test-data can be generated using
 
 Todo:
 - Editing the Product-attributes is not yet implemented
-- Add some nice Form-widget to create and edit attributes
 - Check how it compares with Postgres HStore/JSONb 
 - Currently, when new attributes are added, a reload is required to have it show up in the admin-filters
 
 
-![](img/djangoadmin.png)
+![](img/list.png)
+![](img/add_new.png)

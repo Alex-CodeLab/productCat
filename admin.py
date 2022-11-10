@@ -2,16 +2,17 @@ from typing import Any
 
 from django.contrib import admin
 from django import forms
+from django.db import models
 from products.models import Product
 import json
-
+from flat_json_widget.widgets import FlatJsonWidget
 
 class ProductAdminForm(forms.ModelForm):
-    attributes = forms.CharField()
+    attributes = forms.JSONField(widget=FlatJsonWidget)
 
     class Meta:
         model = Product
-        fields = ('name',)
+        fields = ('name','attributes')
 
 
 def get_all_prod_attributes() -> dict[str, Any]:
