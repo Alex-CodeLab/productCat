@@ -1,7 +1,7 @@
 
 
 Proof of Concept using MariaDB Dynamic Column in Django.
-(https://mariadb.com/kb/en/dynamic-columns-from-mariadb-10/)
+(https://mariadb.com/kb/en/dynamic-columns/)
 
 Results:
 Performance of Filtering & searching in a large dynamic table is decent.
@@ -37,10 +37,10 @@ Initial test-data can be generated using
 
 
 Todo:
-- editing the Product-attributes is not implemented
-- some nice Form-widget to create and edit attributes
-- Check if this could work with Postgres HStore 
-- When new attributes are added, a reload is required to have it show up in the admin-filters
+- Editing the Product-attributes is not yet implemented
+- Add some nice Form-widget to create and edit attributes
+- Check how it compares with Postgres HStore/JSONb 
+- Currently, when new attributes are added, a reload is required to have it show up in the admin-filters
 
 
 ![](img/djangoadmin.png)
