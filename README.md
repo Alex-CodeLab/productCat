@@ -17,8 +17,9 @@ Features
 
 Usage:
 - make sure MySQL or MariaDB is correctly set up as DatabaseEngine
-- pip install PyMySQL
-- add the app this app in INSTALLED_APPS
+- pip install django-mysql
+- add 'django_mysql' to INSTALLED_APPS
+- add 'products' (this app) to INSTALLED_APPS
 - run migrations to create the Products table
 
 

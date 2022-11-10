@@ -41,13 +41,14 @@ def queryset(self, request, queryset):
 class AttributesFilter(admin.SimpleListFilter):
     all_attributes = get_all_prod_attributes()
 
+
 # dynamically create AdminFilter classes
 filters = [type(f"AttributesFilter{k}", (AttributesFilter,), {
     'title': k,
     'parameter_name': k,
     'lookups': lookups,
     'queryset': queryset})
-   for k, v in get_all_prod_attributes().items()]
+           for k, v in get_all_prod_attributes().items()]
 
 
 class ProductAdmin(admin.ModelAdmin):
